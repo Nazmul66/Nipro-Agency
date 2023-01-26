@@ -61,7 +61,7 @@ $(document).ready(function(){
       navText: ["PREV" , "NEXT"],
       dots:true,
       autoplay:true,
-      autoplayTimeout:2000,
+      autoplayTimeout:8000,
       responsive:{
           0:{
               items:1
@@ -82,3 +82,21 @@ $(document).ready(function(){
     
 ////////////////////////////          
     
+//  scrolltop jquery function
+
+$(document).ready(function(){
+  $(window).scroll(function(){
+      if($(window).scrollTop() > 100){
+          $(".fa-arrow-up").fadeIn();
+      }
+      else{
+          $(".fa-arrow-up").fadeOut();
+      }
+  });
+
+  $(".fa-arrow-up").click(function(){
+      $('body').animate({scrollTop:0
+      
+      }, 1000);
+  });
+});

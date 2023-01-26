@@ -22,6 +22,24 @@ a{
 }
 
 /*=======================
+    Preloader section
+=========================*/
+.fa-arrow-up {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  font-size: 20px;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background: #00bc9c;
+  border-radius: 50%;
+  z-index: 99;
+  display: none;
+}
+/*=======================
    header section start
 =========================*/
 header{
@@ -35,9 +53,6 @@ header .logo{
     margin: 0 7px;
     font-size: 18px;
     text-transform: uppercase;
-}
-.navbar-nav .nav-item:last-child{
-
 }
 .navbar-nav .nav-item .nav-link{
 	margin-top: -5px;
@@ -455,7 +470,6 @@ padding: 0 0 130px;
 .workers-details:hover .imgs-hover{
   left: 0;
   transition: all 0.3s ease-in-out;
-}
 }
 
 /*=======================
@@ -896,14 +910,11 @@ footer ul li .fa-brands:hover{
 }
 
 
-
-/*  Responsive for Notepad  */
-
 /*  Responsive for Tablet device  */
 @media (min-width: 577px) and (max-width: 768px){
 
  header {padding: 20px 0 0;}
-.navbar-nav { margin-top: 20px;}
+.navbar-nav { margin-top: 20px; text-align: center;}
 .navbar-toggler { margin-top: -15px;}
 
 .banner-section { padding: 75px 0;}
@@ -967,21 +978,18 @@ footer ul li .fa-brands:hover{
 .footer-menu ul {text-align: center;}
 
 
-
-
-
-
-
-
 }
 
 /*  Responsive for mobile device  */
 @media (min-width: 320px) and (max-width: 576px){
 
+  .fa-arrow-up {bottom: 20px; right: 15px; font-size: 16px; width: 40px; height: 40px; line-height: 40px;}
+
    header .logo {margin-top: -30px;}
   .navbar-nav{margin-top: 36px}
-  .navbar-nav .nav-item {margin: 0; border-bottom: 2px solid #8e8e8e;}
+  .navbar-nav .nav-item {margin: 8px 0px;}
   .navbar-nav .nav-item:last-child {margin-top: 20px; border: 2px solid #8e8e8e; padding: 0 7px 0 0; text-align: right;}
+  .navbar-nav .nav-item .nav-link { font-size: 16px; font-weight: 500;}
   
   .banner-section {padding: 50px 0;}
   .banner-section h1 {font-size: 32px; font-weight: 900; margin-bottom: 20px; text-align: center;}
